@@ -57,7 +57,6 @@ sub chunk_pepfile {
     if ($_ ne "\>") {
       if ($count == 0) {
         open (CHUNK,">".$scratchdir."/".$pepfile."_chunk.$chunk") or die "couldn't open ".$scratchdir."/".$pepfile."_chunk.$chunk";
-        #print "have opened ".$scratchdir."/chunks/chunk.$chunk\n";
       }
       
       $_ =~ s/\>$//;  
